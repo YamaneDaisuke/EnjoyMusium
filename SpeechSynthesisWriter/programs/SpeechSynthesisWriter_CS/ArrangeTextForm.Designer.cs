@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArrangeTextForm));
             this.argTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
@@ -36,7 +37,7 @@
             // 
             // argTextBox
             // 
-            this.argTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.argTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.argTextBox.Font = new System.Drawing.Font("MS UI Gothic", 11F);
             this.argTextBox.ImeMode = System.Windows.Forms.ImeMode.Disable;
@@ -91,8 +92,9 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.argTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ArrangeTextForm";
-            this.Text = "ArrangeTextForm";
+            this.Text = "編集画面";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ArrangeTextForm_Close);
             this.Load += new System.EventHandler(this.ArrangeTextForm_Load);
             this.ResumeLayout(false);

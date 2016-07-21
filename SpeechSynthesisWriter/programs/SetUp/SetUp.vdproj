@@ -16,6 +16,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_07E81DF482B942E4871ACAEB4DB8E83C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_0813A9E8128D4E6587781E3E7ACF3D59"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,6 +40,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1E54F5F04B00420C953A8A0549CD263D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4AD9FFA27D3A4E5781D721E176129475"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_7F1CBA8DEE4244B1A741F715E47B25AF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -46,7 +64,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_C10E5723DF734B65BF042280C1544F34"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DDCD42B6CEDD4F7F823FFBC80DEE24D1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F20F66FDC4D2493EACB7B5C7198EAF2F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F4BC82F8F4BB4D13A4EE179B748DFC80"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -193,6 +229,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_07E81DF482B942E4871ACAEB4DB8E83C"
+            {
+            "SourcePath" = "8:..\\document\\人工音声資料\\ドライバ・ソフトウェア_インストール手順.docx"
+            "TargetName" = "8:ドライバ・ソフトウェア_インストール手順.docx"
+            "Tag" = "8:"
+            "Folder" = "8:_E3EA042341F04BB893CBF53CB4F7220C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0813A9E8128D4E6587781E3E7ACF3D59"
             {
             "SourcePath" = "8:Install.vbs"
@@ -219,6 +275,46 @@
             "TargetName" = "8:Uninstall.vbs"
             "Tag" = "8:"
             "Folder" = "8:_005C80CEDA934CA4A85DF9C0595F72E5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1E54F5F04B00420C953A8A0549CD263D"
+            {
+            "SourcePath" = "8:..\\document\\人工音声資料\\ドライバ・ソフトウェア_インストール手順.pdf"
+            "TargetName" = "8:ドライバ・ソフトウェア_インストール手順.pdf"
+            "Tag" = "8:"
+            "Folder" = "8:_E3EA042341F04BB893CBF53CB4F7220C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4AD9FFA27D3A4E5781D721E176129475"
+            {
+            "SourcePath" = "8:..\\document\\人工音声資料\\音声合成回路書き込みツールの使い方.docx"
+            "TargetName" = "8:音声合成回路書き込みツールの使い方.docx"
+            "Tag" = "8:"
+            "Folder" = "8:_E3EA042341F04BB893CBF53CB4F7220C"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -273,12 +369,72 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C10E5723DF734B65BF042280C1544F34"
+            {
+            "SourcePath" = "8:..\\document\\人工音声資料\\人工音声回路製作手順書.pdf"
+            "TargetName" = "8:人工音声回路製作手順書.pdf"
+            "Tag" = "8:"
+            "Folder" = "8:_E3EA042341F04BB893CBF53CB4F7220C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DDCD42B6CEDD4F7F823FFBC80DEE24D1"
+            {
+            "SourcePath" = "8:..\\document\\人工音声資料\\音声合成回路書き込みツールの使い方.pdf"
+            "TargetName" = "8:音声合成回路書き込みツールの使い方.pdf"
+            "Tag" = "8:"
+            "Folder" = "8:_E3EA042341F04BB893CBF53CB4F7220C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F20F66FDC4D2493EACB7B5C7198EAF2F"
             {
             "SourcePath" = "8:音声記号列生成 Webサービス - AquesTalk - 株式会社アクエスト.URL"
             "TargetName" = "8:音声記号列生成 Webサービス - AquesTalk - 株式会社アクエスト.URL"
             "Tag" = "8:"
             "Folder" = "8:_005C80CEDA934CA4A85DF9C0595F72E5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F4BC82F8F4BB4D13A4EE179B748DFC80"
+            {
+            "SourcePath" = "8:..\\document\\人工音声資料\\人工音声回路製作手順書.pptx"
+            "TargetName" = "8:人工音声回路製作手順書.pptx"
+            "Tag" = "8:"
+            "Folder" = "8:_E3EA042341F04BB893CBF53CB4F7220C"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -309,6 +465,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_E3EA042341F04BB893CBF53CB4F7220C"
+                    {
+                    "Name" = "8:マニュアル"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_573249D7685540CE9B0E5A7CBA8A3E9C"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_56CB86C5F51E4C039C9A393E17D8B642"
@@ -361,7 +528,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SpeechSynthesisWriter"
         "ProductCode" = "8:{8036619E-BE6B-4A5F-9CC0-6253C2371622}"
-        "PackageCode" = "8:{0FC2338D-93C4-44AD-A551-892DC91D9AAB}"
+        "PackageCode" = "8:{5ACBDB29-F676-4307-93F8-64E81715E402}"
         "UpgradeCode" = "8:{EE411773-5718-4724-8DA0-00A248D188A5}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1166,7 +1333,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_17E689FEF051438BBE762F7413E952DB"
             {
-            "SourcePath" = "8:..\\SpeechSynthesisWriter_CS\\obj\\x86\\Debug\\SpeechSynthesisWriter.exe"
+            "SourcePath" = "8:..\\SpeechSynthesisWriter_CS\\obj\\x86\\Release\\SpeechSynthesisWriter.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_005C80CEDA934CA4A85DF9C0595F72E5"

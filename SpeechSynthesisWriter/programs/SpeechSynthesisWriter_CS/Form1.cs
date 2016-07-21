@@ -119,7 +119,7 @@ namespace SpeechSynthesisWriter_CS
         {
             if (serialPort1.IsOpen == true)
                 serialPort1.Close();
-            MessageBox.Show("Bye :-)");
+            //MessageBox.Show("Bye :-)");
         }
 
         private void btnReadData_Click(object sender, EventArgs e)
