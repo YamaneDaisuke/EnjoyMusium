@@ -23,11 +23,12 @@ int main()
     if(mode == FLIGHT && pic.who_are_you() == MY_TENKEY_ADD)
         flight_mode();
 
+	/* ------ PICのEEPROMデータの読出し  -------*/
     lcd.cls();
     lcd.setCursor(0,0);
     lcd.printf("Now\nLoading.");
     led2=1;
-    wait(1); //わざと待機
+    wait(1); //読み出してる感を演出するためにわざと待機
 
     /*init_buff():PICのEEPROMデータの読み出し関数*/
     if(init_buff(eeprom_data) == -1 || pic.who_are_you() != MY_TENKEY_ADD) { //読み込み失敗又はPICの接続が確認できない時
@@ -48,8 +49,9 @@ int main()
     wait(1);
     lcd.cls();
     led2=0;
+	/* ------ PICのEEPROMデータの読出し おわり -------*/
 
-
+	// モードに応じたアプリケーションを起動 各アプリの動作は下記参照
     switch(mode) {
         case TRANSMIT :
             transmit_mode(eeprom_data);
@@ -67,14 +69,16 @@ int main()
             break;
     }
 
-    //下は本来実行され
+    //下は本来実行されない
     while(1) {
         lcd.printf("ERROR!!");
         error("");
     }
 }
 
-
+/* 
+	トランスミットモード
+*/
 void transmit_mode(char eeprom_data[16][16])
 {
     char cnt;
@@ -93,13 +97,15 @@ void transmit_mode(char eeprom_data[16][16])
     lcd.printf("TX >");
 
     while(1) {
-
+		//PICからどのボタンとステータスを取得
         status = pic.read_buttons_state();
+    	//以前のステータスから変化があったかチェック
         mask = status ^ prestatus;
         if(mask) prestatus = status;
         status = status & mask;
 
         if(status) {
+        	//押されたボタンに対応する赤外信号を送信
             for(cnt = 0; cnt < 9; cnt++) {
                 if((status >> cnt) & 0x01) {
                     switch(send_data[cnt][0]) {
@@ -135,6 +141,9 @@ void transmit_mode(char eeprom_data[16][16])
     }
 }
 
+/*
+	レシーブモード
+*/
 void receive_mode(char eeprom_data[16][16])
 {
     ReceiverIR ir_rx(dp14); //割り込みイベントがコンストラクタに書かれていたので、ここでクラスを作成
@@ -184,7 +193,7 @@ void receive_mode(char eeprom_data[16][16])
             }
 
             if(cnt > 1800) {   //3秒以上押された場合
-                //書き込むデータ作成
+                //EEPROMへ書き込むデータを作成
                 eeprom_data[reg][0] = format;
                 eeprom_data[reg][1] = bitlength;
                 n = bitlength / 8 + (((bitlength % 8) != 0) ? 1 : 0);
@@ -222,6 +231,9 @@ void receive_mode(char eeprom_data[16][16])
     }
 }
 
+/*
+	フライトモード
+*/
 void flight_mode()
 {
     int bitlength;
@@ -264,7 +276,9 @@ void flight_mode()
 }
 
 
-
+/* 
+	デバックモード
+*/
 void debug_mode(char eeprom[16][16])
 {
     char ch = select_ch();

@@ -73,9 +73,9 @@ int receive(RemoteIR::Format *format, uint8_t *buf, int bufsiz, ReceiverIR *ir_r
 /**
  * Transmit.
  *
- * @param format Format.
- * @param buf Pointer to a buffer.
- * @param bitlength Bit length of the data.
+ * @param format: Format.
+ * @param buf: Pointer to a buffer.
+ * @param bitlength Bit: length of the data.
  *
  * @return Bit length of the received data.
  */
@@ -117,7 +117,6 @@ void display_format(RemoteIR::Format format)
             break;
     }
 }
-
 
 void display_data(uint8_t *buf, int bitlength)
 {
